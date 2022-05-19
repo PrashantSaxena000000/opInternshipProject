@@ -5,10 +5,12 @@ import 'package:flutter/material.dart';
 class GalleryScreen extends StatelessWidget {
   final List<File> images;
   const GalleryScreen({Key? key, required this.images}) : super(key: key);
-
+  
   @override
   Widget build(BuildContext context) {
+     
     return Scaffold(
+      
       appBar: AppBar(
         title: Text('Gallery'),
       ),

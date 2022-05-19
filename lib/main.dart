@@ -15,7 +15,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    debugShowCheckedModeBanner: false;
     return MaterialApp(
+      
       title: 'Camera App',
       home: CameraScreen(cameras: cameras),
     );
