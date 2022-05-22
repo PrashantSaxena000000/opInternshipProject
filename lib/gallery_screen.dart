@@ -1,6 +1,10 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:image_cropper/image_cropper.dart';
+import 'cropper/ui_helper.dart'
+    if (dart.library.io) 'cropper/mobile_ui_helper.dart'
+    if (dart.library.html) 'cropper/web_ui_helper.dart';
 
 class GalleryScreen extends StatelessWidget {
   final List<File> images;
